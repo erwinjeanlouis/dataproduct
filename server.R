@@ -37,10 +37,10 @@ shinyServer(function(input, output, clientData, session) {
         if (input$resetValues == 0)
             return()
         isolate({
-        updateNumericInput(session, "sepalLength", value = runif(1, 0.0, 5.0))            
-        updateNumericInput(session, "sepalWidth", value = runif(1, 0.0, 5.0))            
-        updateNumericInput(session, "petalLength", value = runif(1, 0.0, 5.0))            
-        updateNumericInput(session, "petalWidth", value = runif(1, 0.0, 5.0))            
+        updateNumericInput(session, "sepalLength", value = runif(1, 0.0, 10.0))            
+        updateNumericInput(session, "sepalWidth", value = runif(1, 0.0, 10.0))            
+        updateNumericInput(session, "petalLength", value = runif(1, 0.0, 10.0))            
+        updateNumericInput(session, "petalWidth", value = runif(1, 0.0, 10.0))            
                 
     })
     

@@ -24,13 +24,13 @@ shinyUI(fluidPage(
                numericInput("sepalLength", label = h3("Sepal Length"), value = 1)),
     
         column(8,
-               numericInput("sepalWidth", label = h3("Sepal Width"), min = 0, max = 5, value = 1))),
+               numericInput("sepalWidth", label = h3("Sepal Width"), value = 2))),
     
     fluidRow(
         column(4,               
-            numericInput("petalLength", label = h3("Petal Length"), min = 0, max = 5, value = 1)),
+            numericInput("petalLength", label = h3("Petal Length"), value = 5)),
         column(8,
-            numericInput("petalWidth", label = h3("Petal Width"), min = 0, max = 5, value = 1))),
+            numericInput("petalWidth", label = h3("Petal Width"), value = 4))),
     
     actionButton("resetValues", label = "Random Petal Features")
     ),
